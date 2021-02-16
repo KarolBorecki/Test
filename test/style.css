@@ -1,0 +1,301 @@
+body, html{
+    height: 100vh;
+	width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    
+    vertical-align: baseline;
+    overflow: hidden;
+    
+    background: #1c2e36 url("img/aerial-shot-aerial-view-bird-s-eye-view-1044329.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.bck{
+    overflow: hidden;
+    left: -10%;
+    width: 50%;
+    height: 150%;
+    top: -25%;
+    
+    background-color: #1b2e37;
+    
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.side{
+    height: 100%;
+}
+
+.left{
+    overflow: hidden;
+    float: left;
+    width: 40%;
+    max-height: 100%;
+    
+    background-color: #1b2e37;
+    
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right{
+    float: right;
+    width: 60%;
+    height: 90vh;
+}
+
+.info{
+    max-height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+    align-items: center;
+    
+    text-align: center;
+}
+
+    .info img{
+        width: 80%;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .info h1{
+        font-size: 3.5vw * 3.5vh;
+        padding: 2%;
+        border-bottom: 0px solid white;
+    }
+
+.nav{
+    list-style: none;
+    margin: 10%;
+    text-align: center;
+    padding: 0px;
+}
+    .nav li{
+        margin: 5%;
+    }
+
+    .nav li a{
+        text-decoration: none;
+        
+        color: white;
+        font-size: 160%;
+    }
+        .nav li a:hover{
+            cursor: pointer;
+            text-shadow: 2px 2px rgba(255, 255, 255, 0.3);
+        }
+
+.socialmedia{
+    width: 100%;
+}
+
+    .socialmedia img{   
+        margin: 1vw;
+        width: 3vw;
+    }
+        .socialmedia img:hover{
+            box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
+        }
+
+.content{    
+    height: 90%;
+    margin: 5%;
+    
+    text-align: center;
+}
+
+    .content h1{
+        font-size: 3vw;
+        margin-top: 20%; 
+    }
+
+    .content p{
+        font-size: 1.5vw;
+    }
+
+.projectwindow{
+    width: 30%;
+    float: left;
+    margin: 1%;
+    
+}
+
+    .projectwindow img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 10%;
+    }
+
+    .projectwindow h4{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        right: 0;
+
+    }
+
+        .projectwindow:hover{
+            cursor: pointer;
+        }
+        .projectwindow img:hover{
+            box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
+        }
+
+.projectdetails img{
+    float: left;
+    width: 20%;
+    margin: 2.5%;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
+}
+
+    .projectdetails a:hover{
+        cursor: pointer;
+        text-shadow: 1px 1px white;
+    }
+    .projectdetails button{
+        margin: 5%;
+    }
+    .description{
+        float: left;
+    }
+
+.btn {
+    height: 50px;
+    width: 40%;
+    background-color: transparent;
+    font-size: 1.5vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px black;
+}
+
+.projectbtn{
+    float: left;
+}
+.back{
+    text-align: center;
+    margin-left: 40%;
+    top: 0;
+    padding: 1%;
+    font-size: 2vw;
+    width: 20%;
+    display: none;
+    position: absolute;
+    margin-bottom: 10%;
+    border: 1px 1px white;
+}
+
+.back:hover{
+    text-shadow: none;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 0.5%;
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+.contact{
+    margin-top: 10%;
+    height: 60%;
+    width: 40%;
+    margin-left: 30%;
+    Box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .contact h1{
+        margin-bottom: 2%;
+    }
+.contactline{
+    width: 90%;
+    margin: 5%;
+    display: inline-block;
+}
+    .contactline img{
+        float: left;
+        width: 10%;
+    }
+
+    .contactline h4{
+        width: 90%;
+        float: right;
+    }
+
+@media only screen and (max-width : 800px) {
+    body, html{
+        overflow: scroll;
+    }
+    .bck{
+        width: 0%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+    }
+    .side{
+        width: 100%;
+        overflow: scroll;
+        float: none;
+    }
+    .left{
+        position: static;
+    }
+    .info{
+        margin-top: 1%;
+    }
+    .info img{
+        width: 40%;
+    }
+    .socialmedia img{   
+        width: 5vw;
+    }
+    .footer{
+        font-size: 2vw;
+    }
+    
+    .content{
+        top: 30%;
+    }
+    .content h1{
+        font-size: 7vw;
+        margin-top: 20%; 
+    }
+
+    .content p{
+        font-size: 4vw;
+    }
+    .btn{
+        font-size: 3vw;
+    }
+    .back{
+        display: block;
+        position: static;
+        border: 1px solid white;
+    }
+    
+    .contact{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karol Borecki</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+	    body {
+	      background-color: #333;
+	    }
+
+	    #game-container {
+	      display: flex;
+	      width: 80vw;
+	      height: 50vw;
+	      margin: 0 auto;
+	      background-color: #333;
+	    }
+
+	    @media only screen and (hover: none) and (pointer: coarse) {
+	      #game-container {
+	        width: 100vw;
+	        height: 142vw;
+	        overflow-y: hidden;
+	        overflow-x: hidden;
+	      }
+	    }
+
+	    #game {
+	      box-sizing: border-box;
+	      width: 100%;
+	      height: 100%;
+	      margin: auto;
+	    }
+	  </style>
+</head>
+<body>
+        <div class="bck"></div>
+
+    <div class="left side" id="nav">
+        <div class="info">
+            <img src="IMG_3468.jpeg">
+            <h1>Hi! My name is Karol.</h1>
+
+            <ul class="nav">
+              <li><a href="#home" onclick="changeContent('home')">Home</a></li>
+              <li><a href="#aboutme" onclick="changeContent('aboutme')">About me</a></li>
+              <li><a href="#projects" onclick="changeContent('projects')">My Projects</a></li>
+              <li><a href="#privacy" onclick="changeContent('privacy')">Privacy</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <a href="https://www.messenger.com/t/Karol.Borecki.op" target="_blank"><img src="img/socialmedia/facebook.png"></a>
+
+                <a href="mailto:karol.boreck@gmail.com"><img src="img/socialmedia/mail.png"></a>
+
+                <a href="https://github.com/KarolBorecki" target="_blank"><img src="img/socialmedia/github.png"></a>
+
+                <a href="https://stackoverflow.com/users/7600544/karol-borecki" target="_blank"><img src="img/socialmedia/stackoverflow.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="right side">
+        <div class="content" id="home">
+            <div style="margin-top: 30%;">
+                <h1>Welcome!</h1>
+                <p>My name is Karol and I'm a mobile games developer.</p>
+                <button class="btn" onclick="changeContent('aboutme')">Show me more</button>
+            </div>
+        </div>
+
+        <div class="content" id="aboutme" style="display: none;">
+					<div id="game-container">
+						<div id="game">
+							<script src="p5.min.js"></script>
+							<script src="p5.sound.min.js"></script>
+							<script src="game.js"></script>
+						</div>
+					</div>
+        </div>
+
+        <div class="content" id="projects" style="display: none;">
+            <h1>My Projects</h1>
+            <a onclick="changeContent('arenaclicker')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/ArenaClicker.png">
+                </div>
+            </a>
+
+            <a onclick="changeContent('decode')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/Decode.png">
+                </div>
+            </a>
+
+            <a onclick="changeContent('pong')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/Pong.png">
+                </div>
+            </a>
+
+            <a onclick="changeContent('pongclimb')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/PongClimb.png">
+                </div>
+            </a>
+
+            <a onclick="changeContent('simplyar')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/SimplyAR.png">
+                </div>
+            </a>
+            <a onclick="changeContent('colorrunner')" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/Colorrunner.png">
+                </div>
+            </a>
+        </div>
+        <div class="projectdetails content" id="decode" style="display: none;">
+            <h1>Decode!</h1>
+            <h4>Decode is a simply arcade game in which you need to set blocks of the same color in the row. Projects has been written in Python2 and Kivy 10.x.</h4>
+            <img src="projectsscreenshots/IMG_0809.PNG">
+            <img src="projectsscreenshots/IMG_0810.PNG">
+            <img src="projectsscreenshots/IMG_0811.PNG">
+            <img src="projectsscreenshots/IMG_0812.PNG">
+
+            <button class="btn" onclick="window.open('https://itunes.apple.com/us/app/decode/id1435812798?ls=1&mt=8');">App Store</button><br>
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+        <div class="projectdetails content" id="arenaclicker" style="display: none;">
+            <h1>ArenaClicker</h1>
+            <h4>Arena clicker is a clicker-type game in which you need to beat your opponents.Projects has been written in Python3 and Kivy 10.x.</h4>
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.00.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.14.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.42.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.16.09.png">
+
+            <button class="btn" onclick="window.open('https://itunes.apple.com/us/app/arenaclicker/id1448413451?ls=1&mt=8');">App Store</button><br>
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+         <div class="projectdetails content" id="pong" style="display: none;">
+            <h1>PingPong for two</h1>
+            <h4>PingPong for two is a classic Pong game from 1972. Projects has been written in Swift 4.x.</h4>
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.36.png">
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.40.png">
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.46.png">
+            <img src="projectsscreenshots/Pong%202019-01-02%20at%2023.42.57.png">
+
+            <button class="btn" onclick="window.open('https://github.com/KarolBorecki/Pong');">Github</button><br>
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+
+        <div class="projectdetails content" id="pongclimb" style="display: none;">
+            <h1>PongClimb</h1>
+            <h4>PongClimb is a arcade game in which you need to avoid blocks by shooting into them. Projects has been written in Unity and C#.</h4>
+            <img src="projectsscreenshots/1.png">
+            <img src="projectsscreenshots/2.png">
+            <img src="projectsscreenshots/4.png">
+            <img src="projectsscreenshots/9.png">
+
+            <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.karolborecki.PongClimb');">Google Play</button>
+            <button class="btn projectbtn" onclick="window.open('https://itunes.apple.com/us/app/pongclimb/id1448132502?ls=1&mt=8');">App Store</button><br>
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+        <div class="projectdetails content" id="simplyar" style="display: none;">
+            <h1>SimplyAr</h1>
+            <h4>SimplyAIR is a project which I made only for educational purpose. It's an app that use augmented reality. It has been made in Unity using Vuforia.</h4>
+            <img src="projectsscreenshots/AR%203245.PNG">
+            <img src="projectsscreenshots/AR%203246.PNG">
+            <img src="projectsscreenshots/AR%203247.PNG">
+            <img src="projectsscreenshots/AR%203248.PNG">
+
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+        <div class="projectdetails content" id="colorrunner" style="display: none;">
+            <h1>Color Runner</h1>
+            <h4>Color Runner is a simply arcade game. The game is not released yet but you can download it from github and try it yourself. It has been made in Unity.</h4>
+            <img src="projectsscreenshots/Colorrunner-3.PNG">
+            <img src="projectsscreenshots/Colorrunner-4.PNG">
+            <img src="projectsscreenshots/Colorrunner-5.PNG">
+            <img src="projectsscreenshots/Colorrunner-6.PNG">
+
+            <button class="btn" onclick="window.open('https://github.com/KarolBorecki/ColorRunner');">Github</button> <br>
+
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+
+        <div class="content" id="privacy" style="display: none;">
+            <h1>Privacy</h1>
+            <div style="margin-top: 10%;">
+                <a href="privacy_policy.html"><button class="btn">Link to my Privacy Policy</button></a><br>
+                <a href="support.html"><button class="btn">Support</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <a href="#nav" class="back">BACK</a>
+
+    <footer class="footer">
+		<p>&copy; Karol Borecki | 2019</p>
+	</footer>
+    <script type="text/javascript">
+        var last = document.getElementById("home");
+        function changeContent(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "none") {
+            last.style.display = "none";
+            last = x;
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+      });
+    } // End if
+  });
+});
+    </script>
+</body>
+</html>
